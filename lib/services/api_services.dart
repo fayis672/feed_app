@@ -4,6 +4,8 @@ import 'package:http/http.dart' as http;
 class ApiServices {
   static var client = http.Client();
 
+//making a get request using http
+
   Future<Feed?> fetchFeed() async {
     try {
       var response = await client.get(Uri.parse(

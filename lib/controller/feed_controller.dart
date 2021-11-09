@@ -12,6 +12,7 @@ class FeedControler extends GetxController {
     super.onInit();
   }
 
+  //fetching data from api
   void fetchFeed() async {
     var feedData = await ApiServices().fetchFeed();
     if (feedData != null) {
